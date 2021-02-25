@@ -1,0 +1,78 @@
+<div class="addItemClass">
+    <mat-card class="cardClass">
+        <mat-card-content>
+            <form (submit)="onSubmit()" #cardForm="ngForm">
+                <mat-form-field class="formFieldClass">
+                    <input 
+                        name="name"
+                        class="inputStyle"
+                        placeholder="Name"
+                        #name="ngModel"
+                        ngModel
+                        required
+                        matInput
+                    >
+                    <mat-error *ngIf="name.invalid && name.touched">
+                        Name is Required
+                    </mat-error>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="formFieldClass">
+                    <input
+                        type="number"
+                        name="price"
+                        class="inputStyle"
+                        placeholder="Price"
+                        #price="ngModel"
+                        ngModel
+                        required
+                        matInput
+                    >
+                    <mat-error *ngIf="price.invalid && price.touched">
+                        Price is Required
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field class="formFieldClass">
+                    <textarea 
+                        name="description"
+                        class="inputStyle" 
+                        rows="5"
+                        placeholder="Description"
+                        #description="ngModel"
+                        ngModel
+                        required
+                        matInput 
+                    >
+                    </textarea>
+                    <mat-error *ngIf="description.invalid && description.touched">
+                        Description is Required
+                    </mat-error>
+                </mat-form-field>
+                <br>
+                <div class="fileInputClass">
+                    <input
+                        type="file"
+                        class="inputStyle"
+                        accept="image/*"
+                        #image
+                        class="fileInputClass"
+                        required
+                        (change)="checkIfImageType($event)"
+                    >
+                    <mat-error *ngIf="fileInvalid">
+                        Image is Invalid
+                    </mat-error>
+                </div>
+                <button
+                    type="submit"
+                    class="buttonClass"
+                    mat-stroked-button
+                >
+                Add
+                </button>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,36 @@
+.addItemClass {
+    background-color:#c6cbcc;
+    min-height: 91%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardClass {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+
+.formFieldClass {
+    width: 90%;
+    margin: auto;
+}
+
+.inputStyle {
+    width: 100%;
+}
+
+.fileInputClass {
+    width: 60%;
+    margin: auto;
+}
+
+.buttonClass {
+    background-color: #0C6980;
+    margin-right: 10px;
+    color: white;
+    margin-top: 10px;
+}
