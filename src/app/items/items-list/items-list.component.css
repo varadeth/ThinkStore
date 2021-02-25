@@ -1,0 +1,50 @@
+.listClass {
+    background-color:#c6cbcc;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.shiftViewDown {
+    top: 10px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: maroon;
+    text-align: center;
+}
+
+.centerAlign {
+    text-align: right;
+    margin-top: -5px;
+}
+
+.buttonClass {
+    background-color: #0C6980;
+    color: white;
+    margin-right: 10px;
+}
+
+.list-item-card-class {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.centerAlignButton {
+    text-align: center;
+}
+
+.description-class {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.price-right-align {
+    font-size: 15px;
+    margin-right: 50px;
+    text-align: right;
+}

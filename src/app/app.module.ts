@@ -9,13 +9,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { ItemsComponent } from './items/items.component';
+import { ItemsListComponent } from './items/items-list/items-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationbarComponent,
     ItemAddComponent,
-    ItemsComponent
+    ItemsComponent,
+    ItemsListComponent,
   ],
   imports: [
     BrowserModule,

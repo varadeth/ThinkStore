@@ -1,10 +1,6 @@
 .addItemClass {
-    background-color:#c6cbcc;
     min-height: 91%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .cardClass {
