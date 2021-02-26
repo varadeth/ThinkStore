@@ -12,6 +12,7 @@ import { ItemsComponent } from './items/items.component';
 import { ItemsListComponent } from './items/items-list/items-list.component';
 import { HomeComponent } from './home/home.component';
 import { NgbCarouselConfig, NgbConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ViewItemComponent } from './items/view-item/view-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NgbCarouselConfig, NgbConfig, NgbModule } from '@ng-bootstrap/ng-bootst
     ItemsComponent,
     ItemsListComponent,
     HomeComponent,
+    ViewItemComponent,
   ],
   imports: [
     BrowserModule,

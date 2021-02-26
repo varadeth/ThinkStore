@@ -1,0 +1,27 @@
+.imageView {
+    margin-left: 10%;
+}
+
+.viewCardClass {
+    width: 60%;
+    margin: auto;
+    min-height: 240px;
+    display: flex;
+}
+
+.view-class {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-content-class {
+    width: 100%;
+}
+
+.view-items {
+    background-color: #c6cbcc;
+    min-height: 91%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

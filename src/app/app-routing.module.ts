@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ItemsListComponent } from './items/items-list/items-list.component';
 import { ItemsComponent } from './items/items.component';
+import { ViewItemComponent } from './items/view-item/view-item.component';
 const routes: Routes = [
     {
         path: '',
@@ -15,6 +16,10 @@ const routes: Routes = [
     {
         path: 'add',
         component: ItemsComponent
+    },
+    {
+        path: 'view-item/:id',
+        component: ViewItemComponent
     }
 ];
 @NgModule({
