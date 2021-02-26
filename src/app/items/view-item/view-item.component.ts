@@ -19,7 +19,6 @@ export class ViewItemComponent implements OnInit {
     let paramsId = this.activatedRoute.snapshot.params.id;
     this.itemService.getSingleItem(paramsId).subscribe(item => {
       this.item = item;
-      console.log(item);
     });
   }
 

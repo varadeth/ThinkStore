@@ -16,9 +16,9 @@ import { ViewItemComponent } from './items/view-item/view-item.component';
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { ErrorComponent } from './error/error.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +28,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     ItemsListComponent,
     HomeComponent,
     ViewItemComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,6 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     FormsModule,
     NgbModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule
   ],
