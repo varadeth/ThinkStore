@@ -10,6 +10,8 @@ import { MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule } fr
 import { FormsModule } from '@angular/forms';
 import { ItemsComponent } from './items/items.component';
 import { ItemsListComponent } from './items/items-list/items-list.component';
+import { HomeComponent } from './home/home.component';
+import { NgbCarouselConfig, NgbConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { ItemsListComponent } from './items/items-list/items-list.component';
     ItemAddComponent,
     ItemsComponent,
     ItemsListComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,9 +30,10 @@ import { ItemsListComponent } from './items/items-list/items-list.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
-  providers: [],
+  providers: [NgbCarouselConfig, NgbConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
