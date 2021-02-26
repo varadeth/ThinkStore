@@ -3,12 +3,12 @@
         <mat-card-content class="card-content-class">
             <div class="row">
                 <div class="col-md-6 heightClass">
-                    <img [src]="" width="350px" height="200px">
+                    <img src={{item?.itemImagePath}} width="350px" height="200px">
                 </div>
                 <div class="col-md-6">
-                    <h2 style="text-align: center;"></h2>
-                    <p></p>
-                    <h4 style="text-align: right;"></h4>
+                    <h2 style="text-align: center;">{{ item?.itemName }}</h2>
+                    <p>{{ item?.itemDescription }}</p>
+                    <h4 style="text-align: right;">{{ item?.itemPrice }}</h4>
                 </div>
             </div>
         </mat-card-content>

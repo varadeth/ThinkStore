@@ -14,6 +14,11 @@ import { HomeComponent } from './home/home.component';
 import { NgbCarouselConfig, NgbConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ViewItemComponent } from './items/view-item/view-item.component';
 
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +38,11 @@ import { ViewItemComponent } from './items/view-item/view-item.component';
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule
   ],
   providers: [NgbCarouselConfig, NgbConfig],
   bootstrap: [AppComponent]

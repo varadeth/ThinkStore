@@ -4,21 +4,25 @@
         Items
     </p>
     <div>
-        <mat-card class="list-item-card-class">
-            <mat-card-title class="centerAlign"></mat-card-title>
+        <mat-card class="list-item-card-class" *ngFor="let item of items; let i=index;">
+            <mat-card-title class="centerAlign">{{ item.itemName }}</mat-card-title>
             <mat-card-content>
                 <p class="description-class">
+                    {{item.itemDescription}}
                 </p>
                 <p class = "price-right-align">
+                    {{item.itemPrice}}
                 </p>
                 <div class="centerAlign">
                     <button 
                         class="buttonClass"
                         mat-raised-button
+                        (click)="onView(i)"
                     >View</button>
                     <button
                         class="buttonClass"
                         mat-raised-button
+                        (click) = "onDelete(i)"
                     >Delete</button>
                 </div>
             </mat-card-content>
