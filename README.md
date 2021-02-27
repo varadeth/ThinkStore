@@ -20,4 +20,4 @@ ThinkStore is a Frontend Solution which tracks the different items shops have fo
 
 Screenshots folder contains two folders
 * project - This folder contains application images.
-* unit test - This folder contains unit test's screenshots.
+* unit test - This folder contains code coverage screenshots. Alternatively, code coverage results can also be viewed from coverage/ThinkStoreUI/index.html
