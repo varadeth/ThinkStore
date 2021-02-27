@@ -7,9 +7,9 @@
         <mat-card class="list-item-card-class" *ngFor="let item of items; let i=index;">
             <mat-card-title class="centerAlign">{{ item.itemName }}</mat-card-title>
             <mat-card-content>
-                <p class="description-class">
-                    {{item.itemDescription}}
-                </p>
+                <div class="centerAlign">
+                    <img src={{item.itemImagePath}} height="100px" width="200px">
+                </div>
                 <p class = "price-right-align">
                     {{item.itemPrice}}
                 </p>
