@@ -15,13 +15,9 @@ export class ItemsListComponent implements OnInit {
   constructor(private itemService: ItemServiceService, private router: Router) { }
 
   ngOnInit() {
-    this.itemService.itemsCollection.snapshotChanges().subscribe(
-        list => {
-          this.items = list.map(item => {
-            const id = item.key;
-          return {id, ...item.payload.val()};
-        })
-      });
+    this.itemService.getAllItems().subscribe(
+      items => this.items = items
+    );
   }
 
   onView(index: number) {
